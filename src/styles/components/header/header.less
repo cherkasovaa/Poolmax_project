@@ -3,11 +3,8 @@
 	font-family: @font-base;
 	color: @color-base;
 
-	&__navbar{
+	&__wrap{
 		padding-top: 34px;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
 	}
 
 	&__nav{
@@ -51,6 +48,7 @@
 	    align-items: center;
 	    padding-top: 168px;
 	}
+
 	&__text {
     font-size: 45px;
     letter-spacing: 0.6px;
@@ -70,6 +68,14 @@
 	    justify-content: center;
 	    padding-top: 195px;
 	    padding-bottom: 59px;
+	}
+
+	@media all and (max-width: 610px) {
+		.header {
+			&__menu-name{
+				display: none;
+			}
+		}
 	}
 
 }
