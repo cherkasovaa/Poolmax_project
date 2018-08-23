@@ -1,0 +1,5 @@
+[2018-08-23 11:10:54] layer "+38 (098) 450 67 89": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2018-08-23 13:18:18] layer "@mail.com": Unsupported extension: com
+[2018-08-23 11:10:54] layer "+38 (0__) ___-__-__": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2018-08-23 11:10:54] layer "+38 (098) 450 67 89 копия": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2018-08-23 11:10:54] layer "+38 (098) 450 67 89 копия 2": Expected Either a default asset specification or a layer asset specification but "+" found.

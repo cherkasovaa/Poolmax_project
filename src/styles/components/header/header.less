@@ -1,0 +1,76 @@
+.header{
+	background: url(../images/bg-img.jpg) no-repeat top center / cover;
+	font-family: @font-base;
+	color: @color-base;
+
+	&__navbar{
+		padding-top: 34px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	&__nav{
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__menu-name{
+		font-family: @font-base;
+		font-size: 22px;
+		text-shadow: 0px 5px 5px  rgba(0, 0, 0, 0.1);
+	}
+
+	&__logo{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 275px;
+	}
+
+	&__img{
+		padding-bottom: 23px;
+	}
+	&__caption{
+		font-family: @font-base;
+		font-size: 22px;
+		line-height: 28px;
+		text-align: center;
+	}
+	&__contacts{
+		font-family: @font-base;
+		font-size: 22px;
+	}
+	&__contacts-tel{
+		padding-bottom: 13px;
+		letter-spacing: 0.3px;
+	}
+	&__main-content {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    padding-top: 168px;
+	}
+	&__text {
+    font-size: 45px;
+    letter-spacing: 0.6px;
+    line-height: 56px;
+    text-shadow: 5px 3px 5px rgba(0,0,0,0.5);
+
+	    &:nth-child(2){
+	    	padding-bottom: 56px;
+	    }
+
+	    &_bold{
+	    	font-weight: 700;
+	    }
+	}
+	&__down-scroll {
+	    display: flex;
+	    justify-content: center;
+	    padding-top: 195px;
+	    padding-bottom: 59px;
+	}
+
+}
+

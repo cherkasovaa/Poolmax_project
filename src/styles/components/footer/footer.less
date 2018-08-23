@@ -1,0 +1,38 @@
+.footer{
+	display: flex;
+	flex-direction: column;
+
+	&__wrap {
+	    display: flex;
+	    justify-content: space-between;
+	}
+
+    &__logo-wrapper,
+    &__contact-wrapper {
+	    display: flex;
+	    align-items: center;
+	    padding-top: 40px;
+	    padding-bottom: 20px;
+	}
+
+	&__contact-wrapper {
+		flex-direction: row-reverse;
+	}
+
+	&__logo{
+		margin-right: 20px;
+	}
+
+	&__logo-text {
+	    width: 40%;
+	}
+
+	&__phones{
+		margin-left: 20px;
+	}
+
+	&__copyright{
+		text-align: center;
+	}
+
+}

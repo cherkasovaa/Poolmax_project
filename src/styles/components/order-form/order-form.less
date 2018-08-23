@@ -1,0 +1,38 @@
+.order-form {
+	display: flex;
+	background: url(../images/bg-img.jpg) no-repeat center center / cover;
+	font-family: @font-base;
+	color: @color-base;
+
+	&__main-content {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    padding-top: 48px;
+	    padding-bottom: 38px;
+	}
+	&__text {
+    font-size: 45px;
+    letter-spacing: 0.6px;
+    line-height: 56px;
+
+	    &:nth-child(2){
+	    	padding-bottom: 56px;
+	    }
+
+	    &_bold{
+	    	font-weight: 700;
+	    }
+	}
+
+	
+
+	&__wrap{
+		display: flex;
+		flex-direction: column;
+		color:#000;
+		background: @color-base;
+		padding: 56px 75px;
+	}
+
+}
