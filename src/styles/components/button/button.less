@@ -11,6 +11,7 @@
 	text-align: center;
 	text-decoration: none;
 	background: rgba(255, 255, 255, 0);
+	cursor: pointer;
 
 	&__miscalculation{
 		background: #3cb878;
@@ -28,13 +29,34 @@
 		width: 100%;
 	}
 
-	@media all and (max-width: 913px) {
-		.button{
-			border-bottom: 1px solid @color-base;
-
-			&_footer{
-				margin: 10px auto;
-			}
-		}
+	&__footer{
+		font-family: @font-base;
+		font-size: 16px;
+		border: 1px solid @color-base;
+		letter-spacing: 1.2px;
+		width: 100%;
+		max-width: 204px;
+		padding: 10px 0;
+		color: @color-base;
+		border-radius: 20px;
+		text-align: center;
+		text-decoration: none;
+		background: rgba(255, 255, 255, 0);
+		cursor: pointer;
 	}
+
 }
+
+	@media all and (max-width: 768px) {
+		.button{
+			text-decoration: underline;
+			border: none;
+			padding: 0;
+
+			&__miscalculation{
+				text-decoration: none;
+			}
+
+		}
+
+	}
