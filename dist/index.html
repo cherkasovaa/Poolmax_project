@@ -12,15 +12,15 @@
 <header class="header">
 	<div class="container-fluid">
 		<!-- header -->
-		<div class="row justify-content-md-between justify-content-center header__wrap">
+		<div class="row justify-content-lg-between justify-content-center header__wrap">
 			<!-- header content -->
-			<nav class="header__nav col-auto">
+			<nav class="header__nav">
 				<a class="header__img-menu_wrap">
 					<img src="images/menu.png" alt="menu">
 				</a>
-				<h5 class="header__menu-name">Menu</h5>
+				<h5 class="header__menu-name">Mеню</h5>
 			</nav>
-			<div class="header__logo colcol-auto">
+			<div class="header__logo">
 				<div class="header__img">
 					<img class="img" src="images/logo.png" alt="logo">
 				</div>
@@ -29,7 +29,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="header__contacts colcol-auto">
+			<div class="header__contacts">
 				<div class="header__contacts-tel">
 					+38 (098) 450 67 89
 				</div>
@@ -145,20 +145,17 @@
 	</div>
 </section>
 <section class="waves">
-	<div class="wave"></div>
-	<!-- <svg viewbox="0 0 100 25"> 
-	  <path fill="#00cee4" d="M0 30 V12 Q30 17 55 12 T100 11 V30z" />
-	</svg> -->
+	<div class="waves__main"></div>
 </section>
 <section class="portfolio">
 	<div class="container-fluid">
-		<div class="row">
+		<div class="row justify-content-center">
 			<h2 class="portfolio__header">
 				Наши работы
 			</h2>
 		</div>
-		<div class="row">
-			<div class="row justify-content-center carousel__wrap ">
+		<div class="row justify-content-center">
+			<div class="carousel__wrap col-auto">
 				<div id="slideshow" class="carousel slide" data-ride="carousel">
 				  <ol class="carousel-indicators">
 				    <li data-target="#slideshow" data-slide-to="0" class="active carousel-items"></li>
@@ -169,19 +166,19 @@
 				  </ol>
 				  <div class="carousel-inner" role="listbox">
 				    <div class="carousel-item active">
-				      <img class="d-block w-70" src="images/works.png" alt="First slide">
+				      <img class="d-block w-100" src="images/works.png" alt="First slide">
 				    </div>
 				    <div class="carousel-item">
-				      <img class="d-block w-70" src="images/works.png" alt="Second slide">
+				      <img class="d-block w-100" src="images/works.png" alt="Second slide">
 				    </div>
 				    <div class="carousel-item">
-				      <img class="d-block w-70" src="images/works.png" alt="Third slide">
+				      <img class="d-block w-100" src="images/works.png" alt="Third slide">
 				    </div>
 				    <div class="carousel-item">
-				      <img class="d-block w-70" src="images/works.png" alt="Fourth slide">
+				      <img class="d-block w-100" src="images/works.png" alt="Fourth slide">
 				    </div>
 				    <div class="carousel-item">
-				      <img class="d-block w-70" src="images/works.png" alt="Fifth slide">
+				      <img class="d-block w-100" src="images/works.png" alt="Fifth slide">
 				    </div>
 				  </div>
 				   <div class="carousel-controls">
@@ -201,7 +198,7 @@
 </section>
 <section class="order-form">
 	<div class="container-fluid">
-		<div class="row">
+		<div class="row justify-content-center">
 			<div class="order-form__main-content">
 				<p class="order-form__text">
 					Закажите <span class="order-form__text_bold">бесплатный</span class="order-form__text_bold"> просчет Вашего
@@ -212,24 +209,24 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="form__wrapper col-lg-9">
+			<div class="form__wrapper col-md-8">
 				<form class="form form__wrap" action="#" method="post">
 					<div class="form-row form_top">
-						 <div class="form-group col-lg-6">
+						 <div class="form-group col-sm-6">
 		    				<label class="form__title" for="username">Имя</label>
 		    				<input type="text" class="form__item" id="username" placeholder="Denis">
 		  				</div>
-		  				<div class="form-group col-lg-6">
+		  				<div class="form-group col-sm-6">
 		    				<label class="form__title" for="phone">Номер телефона <span class="form__star_red">*</span></label>
 		    				<input type="tel" class="form__item" id="phone" placeholder="+38(0__)___-__-__" required>
 		  				</div>
 					</div>
 					<div class="form-row">
-						<div class="form-group col-lg-6">
+						<div class="form-group col-sm-6">
 		    				<label class="form__title" for="adress">E-mail</label>
 		    				<input type="email" class="form__item" id="adress" placeholder="@mail.com">
 		  				</div>
-		  				<div class="form__button-wrap col-lg-6">
+		  				<div class="form__button-wrap col-sm-6">
 							<button type="submit" class="button__form form__title">Заказать</button>
 		  				</div>
 					</div>
@@ -240,33 +237,37 @@
 				
 			</div>
 		</div>
-		<div class="row">
-			<span class="separator"></span>
-			<footer class="footer">
-				<div class="footer__wrap">
-					<div class="footer__logo-wrapper">
+		<footer class="footer">
+			<div class="row justify-content-md-between">
+				<div class="footer__logo-wrapper">
+					<div class="row align-items-center">
 						<img src="images/logo.png" alt="logo" class="footer__logo">
 						<div class="footer__logo-text">Строительство и обслуживание бассейнов</div>
 					</div>
-					<div class="footer__contact-wrapper">
+				</div>
+				<div class="footer__contact-wrapper">
+					<div class="row">
+						<button class="button button_footer">
+							Заказать звонок
+						</button>
 						<div class="footer__phones">
 							<p class="footer__contact-tel">+38(098)450 67 89</p>
 							<p class="footer__contact-tel">+38(098)450 67 89</p>
 						</div>
-						<button class="button">
-							Заказать звонок
-						</button>
 					</div>
 				</div>
-				<p class="footer__copyright">&copy Poolmax 2015-2017</p>
-			</footer>
-		</div>
+			</div>
+			<div class="row justify-content-center">
+				<p class="footer__copyright">
+					&copy Poolmax 2015-2017
+				</p>
+			</div>
+		</footer>
 	</div>
 </section>
 
 
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-
+<!--bootstrap-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
