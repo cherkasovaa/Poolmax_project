@@ -4,6 +4,7 @@
 Using technologies:
  - HTML
  - Less
+ - Bootstrap 4
  - jQuery
  - NPM
  - Grunt.js
