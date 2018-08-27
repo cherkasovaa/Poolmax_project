@@ -1,13 +1,60 @@
 .carousel {
-	position: relative;
-	
-	&__wrap{
-		padding-bottom: 65px;
-	}
 
 	&__indicator{
 	    width: 10px !important;
 	    height: 10px !important;
 	    border-radius: 10px;
+	    border: 2px solid rgba(255,255,255,.5)!important;
+	}
+	&__control{
+		width: 77px;
+		height: 77px;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__indicator{
+		bottom: 35px !important;
+	}
+
+	&-control-next {
+	    right: -15%;
+	}
+
+	&-control-prev {
+	    left: -15%;
+	}
+}
+
+@media all and (min-width: 768px){
+	.carousel{
+		&-inner{
+			padding-bottom: 40px;
+		}
+	}
+}
+@media all and (max-width: 768px){
+	.carousel{
+		&__control{
+			width: 40px;
+		    height: 60px;
+		    padding-bottom: 20px;
+		}
+		&-inner{
+			padding-bottom: 60px;
+		}
+
+		&__indicator{
+			bottom: 20px;
+		}
+
+		&-control-next {
+		    right: 0;
+		}
+
+		&-control-prev {
+		    left: 0;
+		}
 	}
 }
