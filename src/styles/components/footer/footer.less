@@ -6,7 +6,7 @@
 	}
 
 	&__phones{
-		margin-left: 50px;
+		margin-left: 20px;
 	}
 
 	&__logo-text,
@@ -16,22 +16,21 @@
 		font-weight: 400;
 		text-shadow: 0px 5px 5px  fade(@color-background, 50%);
 	}
+	&__copyright{
+		font-size: 16px;
+	}
 }
 
 @media all and (max-width: 913px){
 		.footer{
+			&__phones{
+				margin: 0;
+			}
 
 			&__logo-wrapper, 
 			&__contact-wrapper{
 				margin: 0 auto;
 				text-align: center;
 			}
-
-			&__logo, 
-			&__logo-text,
-			&__phones{
-				margin: 10px auto;
-			}
-
 		}
 	}
