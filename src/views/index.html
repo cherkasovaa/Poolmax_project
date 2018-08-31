@@ -6,70 +6,73 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<title>Poolmax</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
 </head>
 <body>
 <header class="header">
 	<div class="container">
 		<!-- header nav-->
-		<div class="row justify-content-md-between justify-content-center flex-row-reverse flex-md-row header__wrap">
-			<!-- header content -->
-			<div class="col-lg-2 col-md-3 col-1 justify-content-md-end text-lg-left">
-				<nav class="header__nav nav align-items-center">
-					<a class="header__img-menu_wrap">
-						<img src="images/menu.png" alt="menu">
-					</a>
-					<h5 class="header__menu-name">Mеню</h5>
-				</nav>
-			</div>
-			<div class="col-lg-4 col-md-5 col-9 col-sm-10">
-				<div class="header__logo text-center">
-					<div class="header__img">
-						<img class="img" src="images/logo.png" alt="logo">
-					</div>
+		<div class="header__wrap-header-section">
+			<div class="row justify-content-md-between justify-content-center flex-row-reverse flex-md-row header__wrap">
+				<!-- header content -->
+				<div class="col-lg-2 col-md-3 col-1 justify-content-md-end text-lg-left">
+					<nav class="header__nav nav align-baseline">
+						<a class="header__img-menu_wrap">
+							<img src="images/menu.png" alt="menu">
+						</a>
+						<h5 class="header__menu-name">Mеню</h5>
+					</nav>
+				</div>
+				<div class="col-lg-4 col-md-5 col-9 col-sm-10 ml-lg-5">
+					<div class="header__logo text-center ml-lg-5">
+						<div class="header__img">
+							<img class="img" src="images/logo.png" alt="logo">
+						</div>
 
-					<div class="header__caption">
-						<p>Строительство и обслуживание бассейнов
+						<div class="header__caption">
+							<p>Строительство и обслуживание бассейнов
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-9 col-sm-11 text-center text-lg-right">
+					<div class="header__contacts">
+						<div class="header__contacts-tel">
+							+38 (098) 450 67 89
+						</div>
+						<button class="button">
+							Заказать звонок
+						</button>
+					</div>
+				</div>
+			</div>	
+			<!--header main content-->
+			<div class="row">
+				<div class="col-12 text-center">
+					<div class="header__main-content">
+						<p class="header__text">
+							Получите <span class="header__text_bold">бесплатный</span class="header__text_bold"> просчет Вашего
 						</p>
+						<p class="header__text">
+							<span class="header__text_bold">басcейна</span> в течении <span>24</span> часов!
+						</p>
+						<button class="button button__miscalculation">
+							Получить просчёт
+						</button>
+					</div>
+					<div class="header__down-scroll">
+						<a href="#">
+							<img class="header__down-scroll-mobile" src="images/arrow-down-mobile.png" alt="arrow">
+						</a>
+						<a href="#">
+							<img class="header__down-scroll-desktop" src="images/arrow.png" alt="arrow">
+						</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-4 col-9 col-sm-11 text-center text-lg-right">
-				<div class="header__contacts">
-					<div class="header__contacts-tel">
-						+38 (098) 450 67 89
-					</div>
-					<button class="button">
-						Заказать звонок
-					</button>
-				</div>
-			</div>
-		</div>	
-		<!--header main content-->
-		<div class="row justify-content-center">
-			<div class="col-12 text-center">
-				<div class="header__main-content">
-					<p class="header__text">
-						Получите <span class="header__text_bold">бесплатный</span class="header__text_bold"> просчет Вашего
-					</p>
-					<p class="header__text">
-						<span class="header__text_bold">басейна</span> в течении <span>24</span> часов!
-					</p>
-					<button class="button button__miscalculation">
-						Получить просчёт
-					</button>
-				</div>
-				<div class="header__down-scroll">
-					<a href="#">
-						<img class="header__down-scroll-mobile" src="images/arrow-down-mobile.png" alt="arrow">
-					</a>
-					<a href="#">
-						<img class="header__down-scroll-desktop" src="images/arrow.png" alt="arrow">
-					</a>
-				</div>
-			</div>
+			<!--header bottom content-->
+			<span class="separator"></span>
 		</div>
-		<!--header bottom content-->
 		<div class="row advantage justify-content-lg-between">
 			<div class="col-12 col-md-6 col-lg-3">
 				<div class="advantage__content">
@@ -109,8 +112,8 @@
 			</div>
 		</div>
 		<!-- content section -->
-		<div class="row justify-content-lg-between justify-content-center">
-			<div class="benefits__wrapper text-center col-12 col-sm-10 col-md-6 col-lg-4">
+		<div class="row justify-content-lg-around justify-content-center">
+			<div class="benefits__wrapper text-center col-10 col-sm-8 col-md-5 col-lg-3">
 				<img src="images/certificate.png" alt="certificate" class="benefits__image">
 				<h5 class="benefits__content-header">
 					Сертифицированные товары
@@ -119,35 +122,36 @@
 					В нашей работе мы используем только сертифицированные и проверенные временем материалы и оборудование от известных производителей
 				</p>
 			</div>
-			<div class="benefits__wrapper text-center col-12 col-sm-10 col-md-6 col-lg-4">
+			<div class="benefits__wrapper text-center col-10 col-sm-8 col-md-5 col-lg-3">
 				<img src="images/guaranty.png" alt="guaranty" class="benefits__image">
 				<h5 class="benefits__content-header">Даем гарантию на работы</h5>
 				<p class="benefits__content">
 					Мы даем гарантию не только на монтажные работы, но и на всё оборудование и комплектующие
 				</p>
 			</div>
-			<div class="benefits__wrapper text-center col-12 col-sm-10 col-md-6 col-lg-4">
+			<div class="benefits__wrapper text-center col-10 col-sm-8 col-md-5 col-lg-3">
 				<img src="images/time.png" alt="time" class="benefits__image">
 				<h5 class="benefits__content-header">Минимально допустимые сроки</h5>
 				<p class="benefits__content">
 					Каждый этап работы выполняется максимально быстро. При этом соблюдаются все технические нормы и качество работ
 				</p>
 			</div>
-			<div class="benefits__wrapper text-center col-12 col-sm-10 col-md-6 col-lg-4">
+			<div class="w-100"></div>
+			<div class="benefits__wrapper text-center col-10 col-sm-8 col-md-5 col-lg-3">
 				<img src="images/hands.png" alt="hands" class="benefits__image">
 				<h5 class="benefits__content-header">Сопровождение от А до Я</h5>
 				<p class="benefits__content">
 					Мы занимаемся не только строительным, но и пост обслуживанием бассейнов. Все заботы по эксплуатации мы берём на себя
 				</p>
 			</div>
-			<div class="benefits__wrapper text-center col-12 col-sm-10 col-md-6 col-lg-4">
+			<div class="benefits__wrapper text-center col-10 col-sm-8 col-md-5 col-lg-3">
 				<img src="images/complex.png" alt="complex" class="benefits__image">
 				<h5 class="benefits__content-header">Комплексный подход в работе</h5>
 				<p class="benefits__content">
 					Начиная с бассейна. заканчивая зоной отдыха и ландшафтным дизайном. Любые ваши пожелания будут красиво и органичнореализованы в единую картину
 				</p>
 			</div>
-			<div class="benefits__wrapper text-center col-12 col-sm-10 col-md-6 col-lg-4">
+			<div class="benefits__wrapper text-center col-10 col-sm-8 col-md-5 col-lg-3">
 				<img src="images/visual.png" alt="visual" class="benefits__image">
 				<h5 class="benefits__content-header">Детальная визуализация проекта</h5>
 				<p class="benefits__content">
@@ -170,7 +174,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<!-- carousel -->
-			<div id="carouselExampleIndicators" class="carousel slide col-12 col-md-8" data-ride="carousel">
+			<div id="carouselExampleIndicators" class="carousel slide col-12 col-md-9" data-ride="carousel">
 				<ol class="carousel-indicators">
 				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active carousel__indicator"></li>
 				    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="carousel__indicator"></li>
@@ -228,36 +232,35 @@
 		<!-- order form -->
 		<div class="row">
 			<div class="form__wrapper col-md-10 col-12">
-				<form class="form form__wrap" action="#" method="post">
-					<div class="form-row form_top">
-						 <div class="form-group col-sm-6">
+				<form class="form" action="#" method="post">
+					<div class="row form_top">
+						<div class="col-12 col-md-6 form__item-wrap">
 		    				<label class="form__title" for="username">Имя</label>
 		    				<input type="text" class="form__item" id="username" placeholder="Denis">
 		  				</div>
-		  				<div class="form-group col-sm-6">
-		    				<label class="form__title" for="phone">Номер телефона <span class="form__star_red">*</span></label>
+		  				<div class="col-12 col-md-6 form__item-wrap">
+		    				<label class="form__title" for="phone">Номер телефона<span class="form__star_red">*</span></label>
 		    				<input type="tel" class="form__item" id="phone" placeholder="+38(0__)___-__-__" required>
 		  				</div>
-					</div>
-					<div class="form-row">
-						<div class="form-group col-sm-6">
+						<div class="col-12 col-md-6 form__item-wrap pt-lg-3">
 		    				<label class="form__title" for="adress">E-mail</label>
 		    				<input type="email" class="form__item" id="adress" placeholder="@mail.com">
 		  				</div>
-		  				<div class="form__button-wrap col-sm-6">
-							<button type="submit" class="button__form form__title">Заказать</button>
+		  				<div class="form__button-wrap col-12 col-md-6">
+							<button type="submit" class="button__form">Заказать</button>
 		  				</div>
 					</div>
-					<p>
+					<p class="form__text col-12">
 						<span class="form__star_red">*</span> - поля обязательные для заполнения
 					</p>
 				</form>	
 			</div>
 		</div>
+		<span class="separator"></span>
 		<footer class="footer">
 		<!-- contact information -->
 			<div class="row justify-content-lg-between">
-				<div class="col-12 col-sm-6 col-lg-6 col-xl-5 text-md-left footer__logo-wrapper">
+				<div class="col-12 col-sm-6 col-lg-6 col-xl-6 text-md-left footer__logo-wrapper">
 					<div class="d-lg-flex align-items-lg-center">
 						<div class="">
 							<img src="images/logo.png" alt="logo" class="footer__logo">
@@ -267,7 +270,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-lg-6 col-xl-5 text-sm-center text-md-right footer__contact-wrapper">
+				<div class="col-12 col-sm-6 col-lg-6 col-xl-6 text-sm-center text-md-right footer__contact-wrapper">
 					<div class="d-lg-flex align-items-lg-center justify-content-lg-end">
 						<button class="button__footer">
 							Заказать звонок

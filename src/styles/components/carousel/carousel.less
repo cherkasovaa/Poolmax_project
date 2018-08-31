@@ -1,10 +1,10 @@
 .carousel {
 
 	&__indicator{
-	    width: 10px !important;
-	    height: 10px !important;
-	    border-radius: 10px;
-	    border: 2px solid rgba(255,255,255,.5)!important;
+	    width: 12px !important;
+	    height: 12px !important;
+	    border-radius: 12px;
+	    border: 2px solid fade(@color-base, 10%)!important;
 	}
 	&__control{
 		width: 77px;
@@ -16,6 +16,7 @@
 	}
 	&__indicator{
 		bottom: 35px !important;
+		margin-right: 6px !important;
 	}
 
 	&-control-next {
@@ -25,15 +26,12 @@
 	&-control-prev {
 	    left: -15%;
 	}
-}
 
-@media all and (min-width: 768px){
-	.carousel{
-		&-inner{
-			padding-bottom: 40px;
-		}
+	&-inner{
+		padding-bottom: 54px;
 	}
 }
+
 @media all and (max-width: 768px){
 	.carousel{
 		&__control{

@@ -1,32 +1,35 @@
 .button{
 	font-family: @font-base;
 	font-size: 16px;
-	border: 1px solid @color-base;
+	border: 2px solid fadeout(@color-base, 50%);
 	letter-spacing: 1.2px;
 	width: 100%;
-	max-width: 204px;
-	padding: 10px 0;
+	max-width: 205px;
+	padding: 9px 0;
 	color: @color-base;
-	border-radius: 20px;
+	border-radius: 50px;
 	text-align: center;
 	text-decoration: none;
-	background: rgba(255, 255, 255, 0);
+	background: @transparent-background;
 	cursor: pointer;
 
 	&__miscalculation{
-		background: #3cb878;
-	    width: 241px;
-	    height: 52px;
-	    border-radius: 31px;
+		background: fade(@color-header-button-miscalculation, 90%);
+		width: 100%;
+	    max-width: 230px;
+	    line-height: 30px;
+	    border-radius: 50px;
 	    border: none;
 	}
 
 	&__form{
-		background: #43cb83;
-		padding: 9px 0;
+		background: @color-form-button;
+		padding: 8px 0;
 		color:@color-base;
-		border-radius: 31px;
+		border-radius: 50px;
 		width: 100%;
+		letter-spacing: 3px;
+		font-family: @font-base;
 	}
 
 	&__footer{
@@ -38,10 +41,10 @@
 		max-width: 204px;
 		padding: 10px 0;
 		color: @color-base;
-		border-radius: 20px;
+		border-radius: 50px;
 		text-align: center;
 		text-decoration: none;
-		background: rgba(255, 255, 255, 0);
+		background: @transparent-background;
 		cursor: pointer;
 	}
 
@@ -55,6 +58,7 @@
 
 			&__miscalculation{
 				text-decoration: none;
+				line-height: 50px;
 			}
 
 		}

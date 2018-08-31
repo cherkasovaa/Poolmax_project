@@ -1,15 +1,24 @@
 .footer{
-	padding: 40px 15px 20px;
+	padding: 40px 0 15px;
 
 	&__logo{
-		margin: 10px;
+		margin: 0 12px;
 	}
 
 	&__phones{
-		margin-left: 20px;
+		margin-left: 50px;
 	}
 
-	@media all and (max-width: 913px){
+	&__logo-text,
+	&__contact-tel{
+		font-size: 21px;
+		font-family: @font-base;
+		font-weight: 400;
+		text-shadow: 0px 5px 5px  fade(@color-background, 50%);
+	}
+}
+
+@media all and (max-width: 913px){
 		.footer{
 
 			&__logo-wrapper, 
@@ -26,7 +35,3 @@
 
 		}
 	}
-
-
-
-}

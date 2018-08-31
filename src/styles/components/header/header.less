@@ -1,16 +1,16 @@
 .header{
-	background: url(../images/bg-img.jpg) no-repeat center center / cover;
+	background:url(../images/bg-img.jpg) no-repeat center center / cover;
 	font-family: @font-base;
 	color: @color-base;
 
 	&__wrap{
-		padding-top: 34px;
+		padding-top: 40px;
 	}
 
 	&__menu-name{
 		font-family: @font-base;
 		font-size: 22px;
-		text-shadow: 0px 5px 5px  rgba(0, 0, 0, 0.1);
+		text-shadow: 0px 5px 5px fade(@color-background, 10%);
 	}
 
 	&__img{
@@ -29,36 +29,39 @@
 	}
 
 	&__contacts-tel{
-		padding-bottom: 13px;
+		padding-bottom: 6px;
 		letter-spacing: 0.3px;
 	}
 
 	&__main-content {
-	    padding-top: 168px;
+	    padding-top: 160px;
 	}
 
 	&__text {
-    font-size: 45px;
-    letter-spacing: 0.6px;
-    line-height: 56px;
-    text-shadow: 5px 3px 5px rgba(0,0,0,0.5);
+		font-family: @font-base;
+		font-weight: 400;
+	    font-size: 45px;
+	    word-spacing: 1.2px;
+	    line-height: 54px;
+	    text-shadow: 5px 3px 5px fade(@color-background, 50%);
 
 	    &:nth-child(2){
-	    	padding-bottom: 56px;
+	    	padding-bottom: 54px;
 	    }
 
 	    &_bold{
-	    	font-weight: 700;
+	    	font-weight: 600;
 	    }
 	}
+
 	&__down-scroll {
-	    padding-top: 195px;
-	    padding-bottom: 59px;
+	    padding: 193px 0 53px;
 	}
 
 	&__down-scroll-mobile{
 		display: none;
 	}
+}
 
 	@media all and (max-width: 768px) {
 		.header {
@@ -88,6 +91,4 @@
 
 		}
 	}
-
-}
 
