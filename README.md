@@ -1,18 +1,8 @@
-**Base template layout**
--
-
-Using technologies:
- - HTML
- - Less
+# Poolmax website
+This is simple adaptive webpage. 
+ 
+## Using technologies:
+ - HTML5
+ - Preprocessor Less
  - Bootstrap 4
- - jQuery
- - NPM
- - Grunt.js
- 
-Browse:
- - `package.json`( your npm packages )
- - `/src/` ( folder development environment )
- - `/dist/` ( build path ) 
- 
-Install:
- In root path enter command in terminal `npm i`
+ - Task Runner - Grunt
