@@ -1,5 +1,5 @@
 {
-  "author": "Polomkin_Anton",
+  "author": "Alina Cherkasova",
   "name": "template",
   "version": "0.0.1",
   "devDependencies": {
@@ -7,9 +7,9 @@
     "grunt": "latest",
     "grunt-autoprefixer": "latest",
     "grunt-cli": "latest",
-    "grunt-contrib-imagemin": "latest",
+    "grunt-contrib-imagemin": "^4.0.0",
     "grunt-contrib-jshint": "latest",
-    "grunt-contrib-less": "latest",
+    "grunt-contrib-less": "^3.0.0",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",
     "grunt-html-build": "latest"
